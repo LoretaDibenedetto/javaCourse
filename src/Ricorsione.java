@@ -1,8 +1,8 @@
 public class Ricorsione {
     public static void main(String[] args){
 
-        int numero = 20;
-        int somma = moltiplicaSomma(numero);
+        int numero = 5;
+        int somma = calcolaFattoriale(numero);
     System.out.println("Stampa: " + numero + "\n" + somma);
     }
 
@@ -33,12 +33,12 @@ public class Ricorsione {
     }
     /*Chiama un metodo/ una funzione in se stesso, parzialmente o totalmente */
 
-    public  static int moltiplicaSomma(int num){
+    public  static int calcolaFattoriale(int num){
 
-        if (num == 1 ){
+        if (num == 1 || num==0){
             return 1;
         }else{
-            return num+ moltiplicaSomma(num /2);
+            return num* calcolaFattoriale(num -1);
         }
     }
 }

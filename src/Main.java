@@ -1,7 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
-
+/*
       System.out.println("the program is starting");
       //FizzBuzz
       for(int i = 1; i<=100;i++) {
@@ -16,6 +16,22 @@ public class Main {
           System.out.println(i);
         }
       }
+
+*/
+        int altezza = 5; // Modifica l'altezza del rettangolo
+        int larghezza = 10; // Modifica la larghezza del rettangolo
+
+        for (int i = 0; i < altezza; i++) {
+            for (int j = 0; j < larghezza; j++) {
+                if (i == 0 || i == altezza - 1 || j == 0 || j == larghezza - 1) {
+                    System.out.print("*"); // Stampa un asterisco per i bordi
+                } else {
+                    System.out.print(" "); // Stampa uno spazio per l'interno
+                }
+            }
+            System.out.println(); // Vai a capo dopo ogni riga
+        }
+
 
      /* int amount = 47;
 
